@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5447FD3E1E7FC16200B5C583 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C64D81E742AB4004D96C0 /* ViewController.swift */; };
+		5447FD3F1E7FC16200B5C583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C64D61E742AB4004D96C0 /* AppDelegate.swift */; };
+		5447FD421E7FC16200B5C583 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5496B74B1E74394200A5CC58 /* btn.wav */; };
+		5447FD431E7FC16200B5C583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548C64DF1E742AB4004D96C0 /* LaunchScreen.storyboard */; };
+		5447FD441E7FC16200B5C583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548C64DD1E742AB4004D96C0 /* Assets.xcassets */; };
+		5447FD451E7FC16200B5C583 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 548C64E81E7436F6004D96C0 /* Minecraft.ttf */; };
+		5447FD461E7FC16200B5C583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548C64DA1E742AB4004D96C0 /* Main.storyboard */; };
+		5447FD4E1E7FC28500B5C583 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5447FD4D1E7FC28500B5C583 /* CFNetwork.framework */; };
+		5447FD521E7FC2D000B5C583 /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5447FD511E7FC2D000B5C583 /* calabash.framework */; };
 		548C64D71E742AB4004D96C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C64D61E742AB4004D96C0 /* AppDelegate.swift */; };
 		548C64D91E742AB4004D96C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C64D81E742AB4004D96C0 /* ViewController.swift */; };
 		548C64DC1E742AB4004D96C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548C64DA1E742AB4004D96C0 /* Main.storyboard */; };
@@ -17,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5447FD4A1E7FC16200B5C583 /* simpleCalc-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simpleCalc-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5447FD4D1E7FC28500B5C583 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5447FD511E7FC2D000B5C583 /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
 		548C64D31E742AB4004D96C0 /* simpleCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		548C64D61E742AB4004D96C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		548C64D81E742AB4004D96C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +41,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5447FD401E7FC16200B5C583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5447FD4E1E7FC28500B5C583 /* CFNetwork.framework in Frameworks */,
+				5447FD521E7FC2D000B5C583 /* calabash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		548C64D01E742AB4004D96C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,11 +60,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5447FD4C1E7FC28500B5C583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5447FD511E7FC2D000B5C583 /* calabash.framework */,
+				5447FD4D1E7FC28500B5C583 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		548C64CA1E742AB4004D96C0 = {
 			isa = PBXGroup;
 			children = (
 				548C64D51E742AB4004D96C0 /* simpleCalc */,
 				548C64D41E742AB4004D96C0 /* Products */,
+				5447FD4C1E7FC28500B5C583 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				548C64D31E742AB4004D96C0 /* simpleCalc.app */,
+				5447FD4A1E7FC16200B5C583 /* simpleCalc-cal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +105,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5447FD3C1E7FC16200B5C583 /* simpleCalc-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5447FD471E7FC16200B5C583 /* Build configuration list for PBXNativeTarget "simpleCalc-cal" */;
+			buildPhases = (
+				5447FD3D1E7FC16200B5C583 /* Sources */,
+				5447FD401E7FC16200B5C583 /* Frameworks */,
+				5447FD411E7FC16200B5C583 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "simpleCalc-cal";
+			productName = simpleCalc;
+			productReference = 5447FD4A1E7FC16200B5C583 /* simpleCalc-cal.app */;
+			productType = "com.apple.product-type.application";
+		};
 		548C64D21E742AB4004D96C0 /* simpleCalc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 548C64E51E742AB4004D96C0 /* Build configuration list for PBXNativeTarget "simpleCalc" */;
@@ -100,6 +149,9 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "B-Soft";
 				TargetAttributes = {
+					5447FD3C1E7FC16200B5C583 = {
+						DevelopmentTeam = 7UCH2Q7T63;
+					};
 					548C64D21E742AB4004D96C0 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7UCH2Q7T63;
@@ -121,11 +173,24 @@
 			projectRoot = "";
 			targets = (
 				548C64D21E742AB4004D96C0 /* simpleCalc */,
+				5447FD3C1E7FC16200B5C583 /* simpleCalc-cal */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5447FD411E7FC16200B5C583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5447FD421E7FC16200B5C583 /* btn.wav in Resources */,
+				5447FD431E7FC16200B5C583 /* LaunchScreen.storyboard in Resources */,
+				5447FD441E7FC16200B5C583 /* Assets.xcassets in Resources */,
+				5447FD451E7FC16200B5C583 /* Minecraft.ttf in Resources */,
+				5447FD461E7FC16200B5C583 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		548C64D11E742AB4004D96C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +206,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5447FD3D1E7FC16200B5C583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5447FD3E1E7FC16200B5C583 /* ViewController.swift in Sources */,
+				5447FD3F1E7FC16200B5C583 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		548C64CF1E742AB4004D96C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +246,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5447FD481E7FC16200B5C583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7UCH2Q7T63;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = simpleCalc/info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.bondan.simpleCalc-cal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5447FD491E7FC16200B5C583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7UCH2Q7T63;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = simpleCalc/info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "biz.bondan.simpleCalc-cal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		548C64E31E742AB4004D96C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -268,6 +381,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7UCH2Q7T63;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = simpleCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = biz.bondan.simpleCalc;
@@ -281,6 +398,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7UCH2Q7T63;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = simpleCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = biz.bondan.simpleCalc;
@@ -292,6 +413,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5447FD471E7FC16200B5C583 /* Build configuration list for PBXNativeTarget "simpleCalc-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5447FD481E7FC16200B5C583 /* Debug */,
+				5447FD491E7FC16200B5C583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		548C64CE1E742AB4004D96C0 /* Build configuration list for PBXProject "simpleCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
